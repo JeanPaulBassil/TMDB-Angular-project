@@ -1,0 +1,7 @@
+<div id="films">
+  <div class="film-poster" *ngFor="let film of films" (click) = goToFilmDetails(film.id)>
+    <h2 >{{ film.title }}</h2>
+    <img src="https://image.tmdb.org/t/p/w500{{ film.poster_path }}" class="img-poster">
+    <h3>{{ film.overview }}</h3>
+  </div>
+</div>

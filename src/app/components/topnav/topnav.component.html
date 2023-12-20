@@ -1,0 +1,17 @@
+<!-- BEGIN: Navbar -->
+<nav class="navbar">
+  <ul class="navbar-list">
+    <li class="navbar-item"><a [routerLink]="['/nowplaying']" class="navbar-link">Now Playing</a></li>
+    <li class="navbar-item"><a [routerLink]="['/popular']" class="navbar-link">Popular</a></li>
+    <li class="navbar-item"><a [routerLink]="['/toprated']" class="navbar-link">Top Rated</a></li>
+    <li class="navbar-item"><a [routerLink]="['/upcoming']" class="navbar-link">Upcoming</a></li>
+    <li class="navbar-item"><a [routerLink]="['/favorites']" class="navbar-link">Favorites</a></li>
+  </ul>
+  <div class="navbar-search">
+    <form (ngSubmit)="search($event)">
+      <input type="text" id="textInput" name="textInput" [(ngModel)]="searchText" placeholder="Movie Name">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+

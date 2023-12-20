@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Details</title>
+</head>
+<body>
+  <div class="background-image" [ngStyle]="{'background-image': 'url(https://image.tmdb.org/t/p/w500' + (details?.poster_path || '') + ')'}"></div>
+  <div class="content">
+    <mat-card class="movie-card">
+      <mat-card-content>
+        <h1 class="movie-title">{{ details?.title }}<span class="movie-year">{{ details?.release_date | date:'yyyy' }}</span></h1>
+        <p class="movie-casts">Cast: {{ credits?.join(', ') }}</p>
+        <p class="movie-overview">{{ details?.overview }}</p>
+      </mat-card-content>
+    </mat-card>
+    <button (click)="toggleFavorite()" [ngClass]="{'liked': isFavorite, 'not-liked': !isFavorite}">
+      <mat-icon>{{ isFavorite ? 'favorite' : 'favorite_border' }}</mat-icon>
+    </button>
+  </div>
+</body>
+</html>

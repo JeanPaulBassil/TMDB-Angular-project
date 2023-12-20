@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif; /* Apply the imported font */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://image.tmdb.org/t/p/w500{{details?.poster_path}}') no-repeat center center;
+  background-size: cover;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.background-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top, 
+    rgba(0, 0, 0, 0.7) 0%, 
+    rgba(0, 0, 0, 0.0) 50%, /* Black color stops at 25% of the height */
+    rgba(0, 0, 0, 0) 50% /* Begins to transition to transparent at 25% */
+  );
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  max-width: 50%; /* Set max-width to 50% for around half the width of the screen */
+  margin-left: 20px;
+  display: flex;
+  padding: 5rem;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.movie-title {
+  display: inline; /* Make the title inline so the year can sit next to it */
+  font-size: 2em; /* Adjust the font size as needed */
+  text-shadow: 10px;
+}
+
+.movie-year {
+  font-size: 0.75em; /* Smaller font size for the year */
+  margin-left: 10px; /* Add some space between the title and the year */
+  text-shadow: 500rem;
+}
+
+button.liked {
+  color: red; /* Color when liked */
+}
+
+button.not-liked {
+  color: grey; /* Color when not liked */
+}
+
+/* Additional styling for the button (optional) */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* other styling as needed */
+}

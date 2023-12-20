@@ -1,0 +1,5 @@
+<ul id="genres_menu">
+  <li *ngFor="let genre of genres">
+    <a href="#" (click)="goToGenre($event, genre.id)">{{ genre.name }}</a>
+  </li>
+</ul>
