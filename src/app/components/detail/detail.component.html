@@ -11,7 +11,7 @@
     <mat-card class="movie-card">
       <mat-card-content>
         <h1 class="movie-title">{{ details?.title }}<span class="movie-year">{{ details?.release_date | date:'yyyy' }}</span></h1>
-        <p class="movie-casts">Cast: {{ credits?.join(', ') }}</p>
+        <p class="movie-casts">Cast: {{ credits.join(', ') }}</p>
         <p class="movie-overview">{{ details?.overview }}</p>
       </mat-card-content>
     </mat-card>

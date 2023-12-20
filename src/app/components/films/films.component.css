@@ -20,16 +20,21 @@ h3 {
 #films {
     display: flex;
     flex-wrap: wrap;
-    background-color: beige;
+    background-color: #D7F9FF;
+
+    
     justify-content: space-between;
     border-radius: 20px;
     padding: 15px;
     row-gap: 30px;
+  
+    max-height: 700px;
     overflow-y: hidden;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-x: hidden;
 }
-
 
 
 .film-poster {

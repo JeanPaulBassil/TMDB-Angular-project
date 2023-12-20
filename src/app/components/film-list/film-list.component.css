@@ -36,12 +36,14 @@ a {
 #films {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    background-color: beige;
+    width: 100%;
+    background-color: #FFEDE1;
     justify-content: space-between;
     border-radius: 20px;
     padding: 15px;
     row-gap: 30px;
+    padding: 3rem;
+    height:100vh;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
@@ -55,6 +57,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 18%;
+    cursor: pointer;
 }
 
 .img-poster {

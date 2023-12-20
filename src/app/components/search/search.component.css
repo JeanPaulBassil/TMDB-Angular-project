@@ -36,11 +36,12 @@ a {
 #films {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    background-color: beige;
+    width:100%;
+    background-color:#FFEDE1;
+    padding:3rem;
     justify-content: space-between;
     border-radius: 20px;
-    padding: 15px;
+    height: 100vh;
     row-gap: 30px;
     overflow-y: auto;
     scrollbar-width: thin;

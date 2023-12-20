@@ -3,17 +3,19 @@ li,
 .nav {
     margin: 7px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: brown;
+    color:#0E1C36;
     text-decoration: none;
 }
 
 
 .navdiv {
     display: flex;
+  
     justify-content: space-around;
-    width: 76%;
-    background-color: rgb(209, 209, 188);
+    width:90%;
+    background-color: #FFEDE1;
     border-radius: 7px;
-    margin-left: 21%;
-    margin-top: 10px;
+   height: 5vh;
+    margin-left: 5%;
+    margin-top: 10vh;
 }

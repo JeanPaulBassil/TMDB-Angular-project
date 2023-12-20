@@ -6,17 +6,18 @@
 li,
 a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: brown;
+    color:#0E1C36;;
     text-decoration: none;
     margin-bottom: 1rem
 }
 
 #genres_menu {
     margin: 0;
+    height:100vh;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: rgb(209, 209, 188);
+    background-color:#AFCBFF;
     align-self: stretch;
     list-style-type: none;
 }

@@ -1,6 +1,7 @@
 
 .navbar {
-  background-color: #0E1C36;
+  background-color: #FFEDE1;
+ 
   padding: 10px;
 }
 
@@ -17,7 +18,7 @@
 }
 
 .navbar-link {
-  color: #fff;
+  color:#0E1C36;
   text-decoration: none;
   padding: 5px;
 }

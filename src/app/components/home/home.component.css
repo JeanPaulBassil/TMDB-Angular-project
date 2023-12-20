@@ -3,7 +3,11 @@
   height: 100%;
 }
 
-
+.container{
+  height: 100vh;
+  overflow: hidden;
+  background-color: #D7F9FF;
+}
 .row{
   display: flex;
   height: 100%;
@@ -11,6 +15,7 @@
 
 
 .left {
+
   flex: 0 0 20%;
 }
 

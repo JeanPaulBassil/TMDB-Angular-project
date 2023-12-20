@@ -8,6 +8,10 @@ body, html {
   font-family: 'Roboto', sans-serif; /* Apply the imported font */
 }
 
+.movie-card {
+  background-color: transparent;
+  box-shadow: none;
+}
 .background-image {
   position: absolute;
   top: 0;
