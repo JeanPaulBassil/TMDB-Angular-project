@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']  // Corrected from 'styleUrl' to 'styleUrls'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
   genre: number = 0;

@@ -28,13 +28,11 @@ export class GenreMenuComponent implements OnInit {
   }
 
   private processGenreResponse(response: any): void {
-    console.log('Genres:', response.genres);
     this.genres = response.genres;
   }
 
   goToGenre(event: Event, id: number): void {
     event.preventDefault();
-    console.log('Navigating to genre:', id);
     this.router.navigate(['home', id, 1]).then(() => window.location.reload());
   }
 }
