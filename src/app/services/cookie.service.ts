@@ -6,7 +6,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class FavoritesService {
   private readonly favoritesCookieKey = 'favorites';
-  private readonly cookieExpirationDays = 1; // Cookie expiration in days
+  private readonly cookieExpirationDays = 1;
 
   constructor(private cookieService: CookieService) {}
 

@@ -8,7 +8,7 @@ import { ApiService } from '../../services/api.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']  // Corrected from 'styleUrl' to 'styleUrls'
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
   films: any[] = [];
@@ -44,12 +44,10 @@ export class SearchComponent implements OnInit {
   }
 
   private processFilmResponse(response: any): void {
-    console.log('Response:', response);
     this.films = response.results;
   }
 
   goToFilmDetails(id: number): void {
-    console.log('Navigating to film details:', id);
     this.router.navigate(['movie', id]).then(() => window.location.reload());
   }
 }
