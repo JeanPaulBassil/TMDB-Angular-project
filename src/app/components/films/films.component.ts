@@ -30,10 +30,7 @@ export class FilmsComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.genre = +params['genre'];
       this.pagenum = +params['page'];
-      console.log('Genre:', this.genre);
-      console.log('Page Number:', this.pagenum);
     });
-    console.log('FilmsComponent initialized');
   }
 
   private fetchFilms(): void {
@@ -45,12 +42,10 @@ export class FilmsComponent implements OnInit {
   }
 
   private processFilmResponse(response: any): void {
-    console.log('Film Response:', response);
     this.films = response.results;
   }
 
   goToFilmDetails(id: number): void {
-    console.log('Navigating to film details:', id);
     this.router.navigate(['movie', id]).then(() => window.location.reload());
   }
 }
